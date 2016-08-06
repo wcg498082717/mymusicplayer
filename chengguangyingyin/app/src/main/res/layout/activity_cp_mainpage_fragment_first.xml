@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#177ACB"
+    tools:context="com.qf.play.cp_mainpage_fragment_first">
+  <RelativeLayout
+      android:layout_marginLeft="20dp"
+      android:layout_marginRight="20dp"
+      android:layout_marginTop="40dp"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:background="#A9CCE8"
+      >
+   <EditText
+       android:id="@+id/et_search"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+
+       android:textSize="15sp"
+       android:layout_centerVertical="true"
+       android:autoText="false"
+       android:editable="false"
+       android:hint="李荣浩 模特" />
+      <View
+          android:layout_toLeftOf="@+id/img_search"
+          android:layout_width="1dp"
+          android:layout_height="25dp"
+          android:background="#9DA4A5"
+          android:layout_marginRight="15dp"
+          android:layout_centerVertical="true"
+          ></View>
+      <ImageView
+          android:id="@+id/img_search"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:src="@drawable/cp_fragment_first_search"
+          android:layout_alignParentRight="true"
+          android:layout_centerInParent="true"
+          />
+  </RelativeLayout>
+    <LinearLayout
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="#A9CCE8"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+            <TextView
+                android:id="@+id/tv_localMusic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本地音乐"
+                android:textSize="20sp"
+                android:layout_centerVertical="true"
+                />
+            <TextView
+                android:id="@+id/tv_localSum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_localMusic"
+                android:text="8首"
+                android:layout_centerVertical="true"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#9DA4A5"
+            ></View>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+        </RelativeLayout>
+        
+        
+    </LinearLayout>
+
+</LinearLayout>
